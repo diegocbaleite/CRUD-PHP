@@ -21,12 +21,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html>
 <head>
     <title>Cadastrar usuários</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <form method="post" action="">
-        Name: <input type="text" name="name" required><br>
-        Email: <input type="email" name="email" required><br>
-        <input type="submit" value="Create">
-    </form>
+    <div class="form-container">
+        <form method="post" action="">
+            <h2>Cadastrar Usuários</h2>
+            Nome: <input type="text" name="name" required><br>
+            Email: <input type="email" name="email" required><br>
+            <input type="submit" value="Cadastrar">
+        </form>
+    </div>
 </body>
 </html>
+
+
