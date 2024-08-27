@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'config.php';
 
 $sql = "SELECT * FROM users";
 $result = $conn->query($sql);

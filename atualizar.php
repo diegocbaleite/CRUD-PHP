@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'config.php';
 
 // Verificar se o ID foi fornecido e é válido
 if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
