@@ -30,6 +30,46 @@ h1 {
    color: #333;
 }
 
+table {
+   width: 100%;
+   border-collapse: collapse;
+   margin: 20px 0;
+   background-color: #fff;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+   padding: 12px;
+   text-align: left;
+   border-bottom: 1px solid #ddd;
+}
+
+th {
+   background-color: #003fed;
+   color: white;
+}
+
+tr:nth-child(even) {
+   background-color: #f2f2f2;
+}
+
+tr:hover {
+   background-color: #ddd;
+}
+
+a {
+   color: #4CAF50;
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+.actions a {
+   margin-right: 10px;
+}
+
 input[type="text"],
 input[type="email"] {
    width: 100%;
