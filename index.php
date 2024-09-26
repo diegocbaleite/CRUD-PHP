@@ -40,7 +40,7 @@
         <p>Use os links abaixo para executar operações CRUD.</p>
         <a href="cadastro.php">Cadastrar Usúario</a>
         <a href="listar.php">Ver usuários</a>
-        <a href="atualizar.php">Atualizar usuário</a>
+        <a href="listar.php">Atualizar usuário</a>
         <a href="deletar.php">Excluir usuário</a>
     </div>
 </body>

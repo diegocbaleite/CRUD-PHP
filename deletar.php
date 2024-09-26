@@ -6,7 +6,7 @@ $id = $_GET['id'];
 $sql = "DELETE FROM users WHERE id=$id";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Record deleted successfully";
+    echo "Registro excluído com sucesso";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
