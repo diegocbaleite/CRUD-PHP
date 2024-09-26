@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         echo "Formato de email inválido";
     } else {
-        $sql = "UPDATE users SET name=?, email=? WHERE id=?";
+        $sql = "UPDATE usuarios SET name=?, email=? WHERE id=?";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param('ssi', $name, $email, $id);
 
@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 // Preparar e executar a consulta para obter o usuário
-$sql = "SELECT * FROM users WHERE id=?";
+$sql = "SELECT * FROM usuarios WHERE id=?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param('i', $id);
 $stmt->execute();

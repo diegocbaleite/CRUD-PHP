@@ -2,7 +2,7 @@
 include 'config.php';
 
 // Executa a consulta SQL para buscar todos os usuários
-$sql = "SELECT * FROM users";
+$sql = "SELECT * FROM usuarios";
 $result = $conn->query($sql);
 ?>
 
@@ -34,7 +34,7 @@ $result = $conn->query($sql);
                         <td>{$row['id']}</td>
                         <td>{$row['name']}</td>
                         <td>{$row['email']}</td>
-                        <td>{$row['created_at']}</td>
+                        <td>{$row['criado_em']}</td>
                         <td>
                             <a href='atualizar.php?id={$row['id']}'>Editar</a> |
                             <a href='deletar.php?id={$row['id']}' onclick=\"return confirm('Tem certeza que deseja apagar este registro?');\">Apagar</a>
